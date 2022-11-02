@@ -1,2 +1,3 @@
-# LeetCode-ProblemSol
-Collection of Problems I solved on Leetcode
+# LeetCode-Problems Practice
+- Collection of Problems I solved on Leetcode.
+
