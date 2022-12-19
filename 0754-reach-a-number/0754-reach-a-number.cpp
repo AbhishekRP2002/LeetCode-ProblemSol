@@ -7,19 +7,32 @@ public:
         long long int sum = 0;
         int  x = 0 ;
         int step = 0;
-        while( sum < target)
-        {
-            x++;
-            sum+=x;
+//         while( sum < target)
+//         {
+//             x++;
+//             sum+=x;
             
-        }
+//         }
         
-        while((sum - target)&1)
+//         while((sum - target)&1)
+//         {
+//             x++;
+//             sum+=x;
+//         }
+        while(x>=0)
         {
             x++;
             sum+=x;
+            if(sum<target)
+                continue;
+            else
+            {
+                if((sum - target)%2==0)
+                    return x;
+                else
+                    continue;
+            }
         }
-        
-        return x;
+        return 0;
     }
 };
