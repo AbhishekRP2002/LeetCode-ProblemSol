@@ -8,8 +8,8 @@ public:
         int low  = 0 , high = n-1;
         while(high - low > 1)
         {
-            int mid = low + (high - low)/2;
-            cout<<mid<<"<--Mid val"<<"\n";
+            int mid = low + (high - low)/1;
+            // cout<<mid<<"<--Mid val"<<"\n";
             if((arr[mid] > arr[mid-1]) and (arr[mid] > arr[mid+1]))
                 return mid;
             else if(arr[mid] < arr[mid-1])
@@ -17,7 +17,7 @@ public:
             else low = mid;
         
         }
-        cout<<low<<"low-----high"<<high<<"\n";
+        // cout<<low<<"low-----high"<<high<<"\n";
         
         if(arr[low] > arr[high])
             return low;
