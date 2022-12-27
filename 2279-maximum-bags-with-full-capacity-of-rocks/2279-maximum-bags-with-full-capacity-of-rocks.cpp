@@ -6,11 +6,11 @@ public:
         for(int i=0;i<n;++i)
         {
            rocks[i] = ( cap[i] - rocks[i]);
-            cout<<rocks[i]<<" ";
+            
         }
         
         
-        cout<<"\n";
+   
         sort(rocks.begin() , rocks.end());
         
         for(int i=0;i<n;++i)
@@ -32,7 +32,7 @@ public:
         
         for(auto& x: rocks)
         {
-            cout<<x<<" ";
+           
             if(x==0)
                 cnt++;
         }
