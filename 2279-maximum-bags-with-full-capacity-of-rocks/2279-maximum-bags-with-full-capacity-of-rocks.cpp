@@ -9,12 +9,14 @@ public:
             
         }
         
-        
+         int cnt = 0;
    
         sort(rocks.begin() , rocks.end());
         
         for(int i=0;i<n;++i)
         {
+            if(rocks[i]==0)
+                cnt++;
             if(rocks[i] > 0)
             {
                 if(rocks[i] <= addB and addB >0)
@@ -22,20 +24,21 @@ public:
                    
                     addB -= rocks[i];
                      rocks[i]=0;
+                    cnt++;
                     
                 } 
             }
                 
         }
         
-        int cnt = 0;
+       
         
-        for(auto& x: rocks)
-        {
+//         for(auto& x: rocks)
+//         {
            
-            if(x==0)
-                cnt++;
-        }
+//             if(x==0)
+//                 cnt++;
+//         }
         
         
         return cnt;
