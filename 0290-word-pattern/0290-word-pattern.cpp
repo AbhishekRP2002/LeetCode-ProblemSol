@@ -11,7 +11,7 @@ public:
         int i= 0;
         for(string word ; rd>>word;i++)
         {
-            if(i==n or pattern2i[pattern[i]]!= word2i[word])
+            if( pattern2i[pattern[i]]!= word2i[word])
                 return false;
             
             pattern2i[pattern[i]] = word2i[word] = i+1;
