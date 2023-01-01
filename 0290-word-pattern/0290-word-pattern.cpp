@@ -8,7 +8,7 @@ public:
         string s2 = s;
         
         istringstream rd(s);
-        istringstream rd2(s2);
+         istringstream rd2(s);
         
         int i= 0;
         int ctr = 0;
