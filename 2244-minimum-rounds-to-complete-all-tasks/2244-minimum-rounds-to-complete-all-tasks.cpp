@@ -15,7 +15,7 @@ public:
                 if(i.second%3==0)
                     ctr+=(i.second/3);
                 else if(i.second%3 == 1)
-                    ctr+=(i.second/3 - 1 + 2);
+                    ctr+=(i.second/3 + 1);
                 else if(i.second%3==2)
                 {
                     ctr+=(i.second/3 + 1);
