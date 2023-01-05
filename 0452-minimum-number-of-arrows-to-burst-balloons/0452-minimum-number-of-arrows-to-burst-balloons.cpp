@@ -1,13 +1,13 @@
 class Solution {
 
 public:
-    static bool Compare(pair<int , int>& a , pair<int, int>& b)
-    {
-        if(a.second==b.second)
-            return a.first < b.first;
+//     static bool Compare(pair<int , int>& a , pair<int, int>& b)
+//     {
+//         if(a.second==b.second)
+//             return a.first < b.first;
          
-       return a.second < b.second;
-    }
+//        return a.second < b.second;
+//     }
 
     int findMinArrowShots(vector<vector<int>>& points) {
         int n = points.size();
