@@ -20,6 +20,7 @@ public:
         if(root->left == NULL and root->right == NULL)
         {
             sum+=curSum;
+            return;
           
         }
         
