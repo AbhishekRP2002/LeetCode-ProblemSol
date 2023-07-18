@@ -10,7 +10,7 @@ public:
         vis[u]=true;
         for(auto i:adj[u])
         {
-            if(!vis[i])
+            if(!vis[i] and i!=par)
             dfs(i  , u , destination);
         }
     }
