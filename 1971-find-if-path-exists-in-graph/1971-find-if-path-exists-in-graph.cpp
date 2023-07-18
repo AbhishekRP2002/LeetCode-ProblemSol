@@ -6,7 +6,10 @@ public:
     void dfs(int u , int par , int destination)
     {
         if(u==destination)
+        {
             can = true;
+            return;
+        }
         vis[u]=true;
         for(auto i:adj[u])
         {
